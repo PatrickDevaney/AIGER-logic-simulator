@@ -3,7 +3,6 @@
 #include <string>
 #include <cstring>
 #include <unordered_map>
-#include <unistd.h>
 #include "aig.h"
 #include "aiger_cc.h"
 
