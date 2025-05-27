@@ -1,0 +1,5 @@
+# Ensure source files use lf line endings
+*.cc eol=lf
+*.h eol=lf
+# Handle zip as a binary
+*.zip binary
