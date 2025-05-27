@@ -25,4 +25,4 @@ main.o: main.cc aig.h aiger_cc.h
 	$(CC) -c $*.cc
 	
 clean:
-	rm *.o
+	rm *.o sim
