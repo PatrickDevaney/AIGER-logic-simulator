@@ -2,12 +2,12 @@
 #include <fstream>
 #include <string>
 #include <cstring>
+#include <unordered_map>
 #include <unistd.h>
 #include "aig.h"
 #include "aiger_cc.h"
-#include "hash_map.h"
 
-typedef hash_map<const unsigned, aiger_and*, hash<unsigned>, eqNode> AndMap;
+typedef unordered_map<const unsigned, aiger_and*, hash<unsigned>, eqNode> AndMap;
 
 unsigned aiger_literal(unsigned lit)
 {

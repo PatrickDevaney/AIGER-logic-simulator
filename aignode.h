@@ -3,8 +3,10 @@
 
 #include <assert.h>
 #include <string>
-#include "hash_set.h"
-#include "hash_map.h"
+#include <unordered_set>
+#include <unordered_map>
+#include <iostream>
+#include <limits>
 
 using namespace std;
 
@@ -103,8 +105,8 @@ struct eq_node
   }
 };
 
-typedef hash_map<const unsigned, AigNode*, hash<unsigned>, eqNode> NodeMap;
-typedef hash_set<AigNode*, node_hash, node_eq> NodeSet;
-typedef hash_map<unsigned, bool, hash<unsigned>, eqNode> valMap;
+typedef unordered_map<const unsigned, AigNode*, hash<unsigned>, eqNode> NodeMap;
+typedef unordered_set<AigNode*, node_hash, node_eq> NodeSet;
+typedef unordered_map<unsigned, bool, hash<unsigned>, eqNode> valMap;
 #endif
 

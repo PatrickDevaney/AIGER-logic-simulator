@@ -139,7 +139,7 @@ AigNode* AigDef::NewAndNode(AigNode* left, bool lpol, AigNode* right, bool rpol,
 }
 
 AigNode* AigDef::NewAndNode(AigNode* left, bool lpol, AigNode* right, bool rpol) {
-  this->NewAndNode(left, lpol, right, rpol, indexCount);
+  return this->NewAndNode(left, lpol, right, rpol, indexCount);
 }
 
 bool AigDef::recursiveSim(AigNode* node, valMap &terminalValues, vector<AigNode*> &traversedNodes){

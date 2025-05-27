@@ -101,7 +101,7 @@ size_t AigNode::hash_key(void) const
     return h(key);
   }
   else{
-    cerr << "[aignode.cc hash_key] invalid node type" << endl;
+    std::cerr << "[aignode.cc hash_key] invalid node type" << std::endl;
     exit(1);
   }
 }
@@ -150,7 +150,7 @@ unsigned AigNode::get_dependence() const{
 
 
 unsigned AigNode::set_dependence(DependenceStatus status){
-  this->dependence = status;
+  return this->dependence = status;
 }
 
 bool AigNode::is_const() const{

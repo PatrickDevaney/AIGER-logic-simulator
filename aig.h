@@ -5,11 +5,11 @@
 #include <string>
 #include <ctime>
 #include <cstdlib>
-#include "hash_map.h"
-#include "hash_set.h"
+#include <unordered_map>
+#include <unordered_set>
 #include "aignode.h"
 
-typedef hash_map<const unsigned, AigNode*, hash<unsigned>, eqNode> NodeMap;
+typedef unordered_map<const unsigned, AigNode*, hash<unsigned>, eqNode> NodeMap;
 
 
 class AigDef {
